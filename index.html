@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería "Coffee"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo de Cafetería El Sabor" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Menu">Menú</a></li>
+                <li><a href="#Acerca de:">Acerca de:</a></li>
+                <li><a href="#Galeria">Galería</a></li>
+                <li><a href="#Horarios">Horarios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="Inicio" class="seccion">
+        <h2>Inicio</h2>
+        <p>Bienvenidos a Cafetería "Coffee", donde disfrutarás de un ambiente acogedor y delicioso café.</p>
+        <img src="logo.jpg" alt="Imagen de inicio" class="imagen-inicio">
+    </section>
+
+    <section id="Acerca de:" class="seccion">
+        <div class="acerca-de-contenido">
+            <h2>Quiénes somos</h2>
+            <p>Bienvenido a Coffee, somos una acogedora cafetería ubicada en Tijuana, donde el aroma del café recién hecho y el ambiente relajante te dan la bienvenida. Nuestro objetivo es ofrecer a nuestros clientes una experiencia excepcional de café, combinada con deliciosos postres y snacks, todo preparado con ingredientes frescos y de alta calidad. Ya sea que estés buscando tu café matutino, un lugar para reunirte con amigos o un espacio tranquilo para trabajar, estamos aquí para satisfacer tus necesidades. ¡Ven y disfruta de un momento de relajación en Coffee!</p>
+        </div>
+    </section>
+
+    <section id="Menu" class="seccion">
+        <h2>Menú</h2>
+        <div id="menu-container"></div>
+    </section>
+
+    <section id="Galeria" class="seccion">
+        <h2>Galería</h2>
+        <div class="galeria-imagenes">
+            <div class="imagen">
+                <img src="tiendacfae.jpg" alt="Barra para servir el cafe">
+                <p class="descripcion">Barra para servir el cafe</p>
+            </div>
+            <div class="imagen">
+                <img src="tiendacafe2.jpg" alt="Nuestras mejores instalaciones para ti">
+                <p class="descripcion">Nuestras mejores instalaciones para ti</p>
+            </div>
+            <div class="imagen">
+                <img src="tiendacafe3.jpg" alt="Nuestros clientes disfrutando del lugar">
+                <p class="descripcion">Nuestros clientes disfrutando del lugar</p>
+            </div>
+            <div class="imagen">
+                <img src="tiendaexterior.jpg" alt="Nuestra tienda desde el exterior">
+                <p class="descripcion">Nuestra tienda desde el exterior</p>
+            </div>
+            <div class="imagen">
+                <img src="tiendacafe5.jpg" alt="Pide muestros granos de cafe para tu hogar">
+                <p class="descripcion">Pide muestros granos de cafe para tu hogar</p>
+            </div>
+            <div class="imagen">
+                <img src="tiendacafe4.jpg" alt="Excelente ambiente laboral">
+                <p class="descripcion">Excelente ambiente laboral</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Horarios" class="seccion">
+        <h2>Horarios</h2>
+        <p>Nuestros horarios de atención son:</p>
+        <ul>
+            <li>Lunes a Viernes: 8:00 am - 8:00 pm</li>
+            <li>Sábados: 9:00 am - 6:00 pm</li>
+            <li>Domingos: Cerrado</li>
+        </ul>
+    </section>
+
+    <section id="Contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctenos:</p>
+        <p>Teléfono: 664-408-23-22</p>
+        <p>Correo electrónico: miguel.floreschacon@cesunbc.edu.mx</p>
+      
+        <form class="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="Comentarios" class="seccion">
+        <h2>Comentarios</h2>
+        <form id="formulario-comentario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="historial-comentarios"></div>
+        <ul id="lista-comentarios"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
